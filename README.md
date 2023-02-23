@@ -2,6 +2,7 @@
 
 <!--
 **guogenglin/guogenglin** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+-->
 
 🔭Hi, I am Genglin Guo, PhD student in Nanjing Agricultural University, China. My major is veterinary microbiology. 🌱I'm a beginner of bioinformatics, Nov 2022, I started to study python from zero. I hope I can contribute to fix microbiology problems using bioinformatics methods. 
 
