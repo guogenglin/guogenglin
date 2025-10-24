@@ -4,12 +4,12 @@
 **guogenglin/guogenglin** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 -->
 
-🔭Hi, I am Genglin Guo, PhD. My major is veterinary microbiology. 🌱I'm and always been a beginner in bioinformatics, I love this area. I hope I can contribute to microbiology studies using bioinformatics methods. 
+🔭 Hi, I’m Genglin Guo, PhD, my major is veterinary microbiology. 🌱 I’ve always been a beginner in bioinformatics, but I’m passionate about this field and hope to contribute to microbiology research using bioinformatics approaches.
 
-💬I hope that these scripts I uploaded can help those people who focus on that area. 🤔 I have to admit that these scripts are very rough and may have many problems and have big potential to be updated, and I am continuously working on that through further study, also, if anyone could give me some advice, I would be very grateful.
+💬 I’ve uploaded some scripts that I hope will be helpful to others working in this area. 🤔I must admit that these scripts are still rough, may contain issues, and have plenty of room for improvement. I’m continuously working on refining them through further study, and I would be extremely grateful for any advice or feedback.
 
-👯If you are trying to do some bacteria genomic analysis jobs using bioinformatics, I'd be happy to try writing some scripts to help, freely. ⚡However, I am not sure that I can solve your problem, as my skills in bioinformatics are limited.😄
+👯 If you’re working on bacterial genomics and need help with bioinformatics scripts, I’d be happy to try writing something to assist you—completely free of charge. ⚡ However, I should note that my bioinformatics skills are still developing, so I might not be able to solve every problem. 😄
 
-BTW, now I'm looking for a job (or a postdoc position), if anyone is interested or could give me some information, please contact me ASAP.🙏
+By the way, I’m currently looking for a job or a postdoctoral position. If you’re interested or have any information, please feel free to contact me as soon as possible. 🙏
 
 📫2019207025@njau.edu.cn
