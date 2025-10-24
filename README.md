@@ -14,5 +14,5 @@ By the way, I’m currently looking for a job or a postdoctoral position. If you
 
 📫2019207025@njau.edu.cn
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api/?username=guogenglin&show_icons=true&count_private=true&layout=compact&hide=prs&theme=radical&transparent=true)
-![GitHub Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=guogenglin&show_icons=true&count_private=true&theme=radical&transparent=true)
+![GitHub Stats](https://github-readme-stats.vercel.app/api/?username=guogenglin&show_icons=true&count_private=true&layout=compact&hide=prstheme=radical&transparent=true)
+![GitHub Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=guogenglin&show_icons=true&count_private=true&layout=compact&hide=prstheme=radical&transparent=truee)
