@@ -1,0 +1,28 @@
+name: Update README cards
+
+on:
+  schedule:
+    - cron: '0 0 * * *'   # update daily
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate stats
+        run: |
+          mkdir -p profile
+          curl "https://github-readme-stats.vercel.app/api/?username=guogenglin&show_icons=true&count_private=true&layout=compact&hide=prs&theme=radical&transparent=true&hide_border=true" \
+            -o profile/stats-guogenglin.svg
+          curl "https://github-readme-stats.vercel.app/api/top-langs/?username=guogenglin&show_icons=true&count_private=true&layout=compact&hide=prs&theme=radical&transparent=true&hide_border=true" \
+            -o profile/top-langs-guogenglin.svg
+
+      - name: Commit files
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add profile/*.svg
+          git commit -m "Update GitHub stats SVG" || echo "No changes"
+          git push
