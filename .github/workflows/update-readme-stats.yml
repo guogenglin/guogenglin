@@ -18,9 +18,9 @@ jobs:
       - name: Generate stats
         run: |
           mkdir -p profile
-          curl "https://github-readme-stats.vercel.app/api/?username=guogenglin&show_icons=true&count_private=true&layout=compact&hide=prs&theme=radical&transparent=true&hide_border=true" \
+          curl "https://github-readme-stats.vercel.app/api/?username=guogenglin&show_icons=true&count_private=true&layout=compact&hide=prs&theme=vue&transparent=true&hide_border=true" \
             -o profile/stats-guogenglin.svg
-          curl "https://github-readme-stats.vercel.app/api/top-langs/?username=guogenglin&show_icons=true&count_private=true&layout=compact&hide=prs&theme=radical&transparent=true&hide_border=true" \
+          curl "https://github-readme-stats.vercel.app/api/top-langs/?username=guogenglin&show_icons=true&count_private=true&layout=compact&hide=prs&theme=vue&transparent=true&hide_border=true" \
             -o profile/top-langs-guogenglin.svg
 
       - name: Commit files
