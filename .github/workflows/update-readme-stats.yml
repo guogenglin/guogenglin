@@ -2,7 +2,7 @@ name: Update README cards
 
 on:
   schedule:
-    - cron: '0 0 * * *'   # update daily
+    - cron: '0 0 * * *'
   workflow_dispatch:
 
 jobs:
@@ -11,22 +11,64 @@ jobs:
 
     permissions:
       contents: write
-      
+
     steps:
       - uses: actions/checkout@v4
 
-      - name: Generate stats
+      - name: Create profile dir
+        run: mkdir -p profile
+
+      # =========================
+      # Stats card (with retry)
+      # =========================
+      - name: Generate stats card
         run: |
-          mkdir -p profile
-          curl "https://github-readme-stats.vercel.app/api/?username=guogenglin&show_icons=true&count_private=true&layout=compact&hide=prs&theme=vue&transparent=true&hide_border=true" \
+          url="https://github-readme-stats.vercel.app/api/?username=guogenglin&show_icons=true&count_private=true&hide=prs&theme=vue&hide_border=true"
+
+          curl -L --fail \
+            --retry 5 \
+            --retry-delay 10 \
+            --retry-all-errors \
+            -H "User-Agent: Mozilla/5.0" \
+            "$url" \
             -o profile/stats-guogenglin.svg
-          curl "https://github-readme-stats.vercel.app/api/top-langs/?username=guogenglin&show_icons=true&count_private=true&layout=compact&hide=prs&theme=vue&transparent=true&hide_border=true" \
+
+          # verify file not empty
+          if [ ! -s profile/stats-guogenglin.svg ]; then
+            echo "Stats SVG is empty, failing job"
+            exit 1
+          fi
+
+      # =========================
+      # Top languages card
+      # =========================
+      - name: Generate top languages card
+        run: |
+          url="https://github-readme-stats.vercel.app/api/top-langs/?username=guogenglin&layout=compact&count_private=true&hide=prs&theme=vue&hide_border=true"
+
+          curl -L --fail \
+            --retry 5 \
+            --retry-delay 10 \
+            --retry-all-errors \
+            -H "User-Agent: Mozilla/5.0" \
+            "$url" \
             -o profile/top-langs-guogenglin.svg
 
+          if [ ! -s profile/top-langs-guogenglin.svg ]; then
+            echo "Top languages SVG is empty, failing job"
+            exit 1
+          fi
+
+      # =========================
+      # Commit
+      # =========================
       - name: Commit files
         run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add profile/*.svg
+
           git commit -m "Update GitHub stats SVG" || echo "No changes"
+
           git push
