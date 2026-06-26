@@ -10,8 +10,6 @@
 
 👯 If you’re working on bacterial genomics and need help with bioinformatics scripts, I’d be glad to collaborate or explore solutions together. ⚡
 
-By the way, I’m currently looking for a job or a postdoctoral position. If you’re interested or have any information, please feel free to contact me as soon as possible. 🙏
-
 📫2019207025@njau.edu.cn; gg599@drexel.edu
 
 <p align="left">
