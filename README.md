@@ -8,7 +8,7 @@
 
 💬 I’ve uploaded some scripts that I hope will be helpful to others working in this area. 🤔While they are still evolving, I’m continuously working on refining them through further study, and I would be extremely grateful for any advice or feedback.😄
 
-👯 If you’re working on bacterial genomics and need help with bioinformatics scripts, I’d be glad to collaborate or explore solutions together. ⚡
+👯 If you’re working on bacterial genomics or need help with bioinformatics, I’d be glad to collaborate or explore solutions together. ⚡
 
 📫2019207025@njau.edu.cn; gg599@drexel.edu
 
